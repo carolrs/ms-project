@@ -3,6 +3,7 @@ package com.devsuperior.hruser.com.devsuperior.hruser.entities;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -13,6 +14,8 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+
+    @Column(unique = true) //anotação para não deixar o email se repetir.
     private String email;
     private String password;
 
@@ -67,5 +70,18 @@ public class User implements Serializable {
 
     public Set<Role> getRoles() {
         return roles;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(id, user.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

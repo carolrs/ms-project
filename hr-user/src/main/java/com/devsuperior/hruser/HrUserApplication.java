@@ -19,6 +19,36 @@ public class HrUserApplication implements CommandLineRunner {
     private BCryptPasswordEncoder passwordEncoder;
     @Override
     public void run(String... args) throws Exception {
-        //System.out.println("BCRYPT = " + passwordEncoder.encode("123456"));
+
+        //String senhaCriada = "123456";
+
+        //String hashed = passwordEncoder.encode(senhaCriada);
+       // System.out.println("BCRYPT = " + hashed);
+
+
+        //boolean correct = passwordEncoder.matches(senhaCriada, hashed);
+
+        //boolean wrong = passwordEncoder.matches("56789", hashed);
+
+       /* System.out.println("Correta: " + correct);
+        System.out.println("Errada: " + wrong);
+
+
+        boolean isWrong = true;
+        int senha = 0;
+        long start = System.currentTimeMillis();
+        while (isWrong) {
+
+            if (passwordEncoder.matches(senha+"", hashed)) {
+                isWrong = false;
+            } else {
+                senha++;
+            }
+        }
+
+        long end = System.currentTimeMillis();
+
+        System.out.println("Sua senha é: " + senha + " e foi encontrada em " + ((end - start) / 1000));*/
+
     }
 }
