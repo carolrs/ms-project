@@ -1,19 +1,14 @@
-package com.devsuperior.hruser.com.devsuperior.hruser.entities;
+package devsuperior.com.hroauth.entities;
 
-import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity
-@Table(name = "tb_role")
 public class Role implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
     private String roleName;
 
     public Role(){
-
     }
 
     public Role(Long id, String roleName) {
