@@ -36,6 +36,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         //met para config a autenticação e autorização com base nas credencias do aplicativo.
+
         clients.inMemory()
                 .withClient("myappname123")
                 .secret(passwordEncoder.encode("myappsecrete123"))

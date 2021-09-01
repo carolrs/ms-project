@@ -16,12 +16,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private BCryptPasswordEncoder passwordEncoder;
 
     @Autowired
-    private UserDetailsService userDetailsService;
+    private UserDetailsService userService;
 
     @Override
     @Autowired
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-       auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder);
+       auth.userDetailsService(userService).passwordEncoder(passwordEncoder);
     }
 
     @Override
