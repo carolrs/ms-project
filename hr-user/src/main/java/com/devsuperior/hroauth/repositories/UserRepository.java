@@ -1,6 +1,6 @@
-package com.devsuperior.hruser.repositories;
+package com.devsuperior.hroauth.repositories;
 
-import com.devsuperior.hruser.com.devsuperior.hruser.entities.User;
+import com.devsuperior.hroauth.com.devsuperior.hruser.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User,Long> {

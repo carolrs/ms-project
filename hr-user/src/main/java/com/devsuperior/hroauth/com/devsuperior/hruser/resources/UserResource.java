@@ -1,7 +1,7 @@
-package com.devsuperior.hruser.com.devsuperior.hruser.resources;
+package com.devsuperior.hroauth.com.devsuperior.hruser.resources;
 
-import com.devsuperior.hruser.com.devsuperior.hruser.entities.User;
-import com.devsuperior.hruser.repositories.UserRepository;
+import com.devsuperior.hroauth.com.devsuperior.hruser.entities.User;
+import com.devsuperior.hroauth.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

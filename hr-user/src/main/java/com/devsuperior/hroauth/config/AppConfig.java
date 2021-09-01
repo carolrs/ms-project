@@ -1,4 +1,4 @@
-package com.devsuperior.hruser.config;
+package com.devsuperior.hroauth.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
