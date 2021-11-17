@@ -1,4 +1,4 @@
-package com.devsuperior.hroauth.com.devsuperior.hruser.resources;
+package com.devsuperior.hruser.resources;
 
 import com.devsuperior.hroauth.com.devsuperior.hruser.entities.User;
 import com.devsuperior.hroauth.repositories.UserRepository;
